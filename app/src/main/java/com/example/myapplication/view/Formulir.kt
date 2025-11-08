@@ -72,5 +72,15 @@ fun FormIsian(
                 )
             )
         }
-    ){isiRuang ->}
+    ){isiRuang ->
+        Column(
+            modifier = Modifier
+                .padding(isiRuang)
+                .fillMaxSize()
+                .padding(dimensionResource(id = R.dimen.padding_medium)),
+            horizontalAlignment = Alignment.CenterHorizontally,
+        ){
+
+        }
+    }
 }
