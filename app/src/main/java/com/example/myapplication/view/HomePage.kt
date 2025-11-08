@@ -33,6 +33,14 @@ fun HalamanHome(
                     color = colorResource(id = R.color.red)
                 )
                 Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.spacer_xlarge)))
+
+                Image(
+                    painter = painterResource(id = R.drawable.x),
+                    contentDescription = stringResource(id = R.string.logo_content_desc),
+                    modifier = Modifier.size(dimensionResource(id = R.dimen.logo_size))
+                )
+
+                Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.spacer_xlarge)))
             }
         }
     }
