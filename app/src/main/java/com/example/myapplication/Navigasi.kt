@@ -23,6 +23,17 @@ fun DataApp(
                     onMasukClick = { navController.navigate(Navigasi.ListPeserta.name) }
                 )
             }
+            // 2. Halaman Formulir
+            composable(route = Navigasi.Formulirku.name) {
+                FormIsian(
+                    // Perintah untuk kembali ke List
+                    onBackClick = { navController.popBackStack() },
+                    // Perintah untuk kembali ke Home
+                    onBerandaClick = {
+                        navController.popBackStack(Navigasi.Home.name, inclusive = false)
+                    }
+                )
+            }
         }
     }
 }
