@@ -132,6 +132,7 @@ fun FormIsian(
                             Text(text = strPerempuan)
                         }
                     }
+                    Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.spacer_large)))
                 }
             }
         }
