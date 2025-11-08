@@ -185,7 +185,27 @@ fun FormIsian(
                     )
                     Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.spacer_xlarge)))
 
-
+                    // TOMBOL DI DALAM CARD
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.SpaceBetween
+                    ) {
+                        Button(
+                            onClick = onBerandaClick,
+                            modifier = Modifier.weight(1f)
+                        ) {
+                            Text(text = stringResource(id = R.string.btn_beranda))
+                        }
+                        Spacer(modifier = Modifier.width(dimensionResource(id = R.dimen.spacer_medium)))
+                        Button(
+                            onClick = { showDialog = true },
+                            modifier = Modifier.weight(1f),
+                            enabled = nama.isNotBlank() && jenisKelamin.isNotBlank() &&
+                                    statusPerkawinan.isNotBlank() && alamat.isNotBlank()
+                        ) {
+                            Text(text = stringResource(id = R.string.btn_submit))
+                        }
+                    }
                 }
             }
         }
