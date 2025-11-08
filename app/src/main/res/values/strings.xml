@@ -1,3 +1,32 @@
 <resources>
     <string name="app_name">My Application</string>
+    //home page
+    <string name="selamat_datang">Selamat Datang</string>
+    <string name="logo_content_desc">CARD-LST Mobile App 2025 Logo</string>
+    <string name="masuk">Masuk</string>
+    //form page
+    <string name="form_title">Formulir Pendaftaran</string>
+    <string name="label_nama_lengkap">NAMA LENGKAP</string>
+    <string name="placeholder_nama">Isikan nama lengkap</string>
+    <string name="label_jenis_kelamin">JENIS KELAMIN</string>
+    <string name="jk_laki">Laki-laki</string>
+    <string name="jk_perempuan">Perempuan</string>
+    <string name="label_status">STATUS PERKAWINAN</string>
+    <string name="status_janda">Janda</string>
+    <string name="status_lajang">Lajang</string>
+    <string name="status_duda">Duda</string>
+    <string name="label_alamat">ALAMAT</string>
+    <string name="placeholder_alamat">Isikan alamat</string>
+    <string name="btn_beranda">Beranda</string>
+    <string name="btn_submit">Submit</string>
+    //pop up dialog
+    <string name="dialog_title">Data Berhasil Disimpan</string>
+    <string name="dialog_label_nama">Nama</string>
+    <string name="dialog_label_jk">Jenis Kelamin</string>
+    <string name="dialog_label_status">Status</string>
+    <string name="dialog_label_alamat">Alamat</string>
+    <string name="dialog_btn_ok">OK</string>
+    //list page
+    <string name="list_title">List Daftar Peserta</string>
+    <string name="btn_formulir">Formulir</string>
 </resources>
