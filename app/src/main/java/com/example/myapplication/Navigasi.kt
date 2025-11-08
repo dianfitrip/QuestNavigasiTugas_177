@@ -34,6 +34,17 @@ fun DataApp(
                     }
                 )
             }
+            // 3. Halaman List Peserta
+            composable(route = Navigasi.ListPeserta.name) {
+                ListPesertaScreen(
+                    onBerandaClick = {
+                        navController.popBackStack(Navigasi.Home.name, inclusive = false)
+                    },
+                    onFormulirClick = {
+                        navController.navigate(Navigasi.Formulirku.name)
+                    }
+                )
+            }
         }
     }
 }
