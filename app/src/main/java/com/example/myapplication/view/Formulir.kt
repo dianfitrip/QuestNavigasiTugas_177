@@ -80,7 +80,16 @@ fun FormIsian(
                 .padding(dimensionResource(id = R.dimen.padding_medium)),
             horizontalAlignment = Alignment.CenterHorizontally,
         ){
+            Card(
+                modifier = Modifier.fillMaxWidth(0.9f),
+                colors = CardDefaults.cardColors(containerColor = Color.White),
+                shape = MaterialTheme.shapes.large,
+                elevation = CardDefaults.cardElevation(
+                    defaultElevation = dimensionResource(id = R.dimen.card_elevation)
+                )
+            ){
 
+            }
         }
     }
 }
