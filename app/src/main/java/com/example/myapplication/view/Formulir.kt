@@ -169,6 +169,7 @@ fun FormIsian(
                             Text(text = strDuda)
                         }
                     }
+                    Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.spacer_large)))
                 }
             }
         }
