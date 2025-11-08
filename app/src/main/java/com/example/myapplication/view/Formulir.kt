@@ -183,6 +183,9 @@ fun FormIsian(
                         label = { Text(text = stringResource(id = R.string.placeholder_alamat)) },
                         modifier = Modifier.fillMaxWidth()
                     )
+                    Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.spacer_xlarge)))
+
+
                 }
             }
         }
