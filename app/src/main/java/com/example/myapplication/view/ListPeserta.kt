@@ -99,5 +99,22 @@ fun PesertaCard(peserta: PesertaData) {
                     modifier = Modifier.weight(1f)
                 )
             }
+            Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.padding_small)))
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceBetween
+            ) {
+                DataLabelValue(
+                    label = stringResource(id = R.string.label_status),
+                    value = peserta.statusPerkawinan,
+                    modifier = Modifier.weight(1f)
+                )
+                DataLabelValue(
+                    label = stringResource(id = R.string.label_alamat),
+                    value = peserta.alamat,
+                    modifier = Modifier.weight(1f)
+                )
+            }
+        }
     }
 }
