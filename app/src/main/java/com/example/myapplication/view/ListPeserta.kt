@@ -118,3 +118,19 @@ fun PesertaCard(peserta: PesertaData) {
         }
     }
 }
+
+@Composable
+fun DataLabelValue(label: String, value: String, modifier: Modifier = Modifier) {
+    Column(modifier = modifier) {
+        Text(
+            text = label,
+            fontSize = dimensionResource(id = R.dimen.font_size_small_label).value.sp,
+            color = colorResource(id = R.color.grey_label)
+        )
+        Text(
+            text = value,
+            fontSize = dimensionResource(id = R.dimen.font_size_label).value.sp,
+            fontWeight = FontWeight.SemiBold
+        )
+    }
+}
