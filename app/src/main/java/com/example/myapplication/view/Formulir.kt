@@ -106,6 +106,32 @@ fun FormIsian(
                         singleLine = true
                     )
                     Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.spacer_large)))
+
+                    // JENIS KELAMIN
+                    Text(
+                        text = stringResource(id = R.string.label_jenis_kelamin),
+                        fontSize = dimensionResource(id = R.dimen.font_size_label).value.sp,
+                        color = colorResource(id = R.color.grey_label)
+                    )
+                    Row(modifier = Modifier.fillMaxWidth()) {
+                        // Radio Laki-laki (Kode ditulis langsung)
+                        Row(verticalAlignment = Alignment.CenterVertically) {
+                            RadioButton(
+                                selected = jenisKelamin == strLaki,
+                                onClick = { jenisKelamin = strLaki }
+                            )
+                            Text(text = strLaki)
+                        }
+                        Spacer(modifier = Modifier.width(dimensionResource(id = R.dimen.spacer_medium)))
+                        // Radio Perempuan (Kode ditulis langsung)
+                        Row(verticalAlignment = Alignment.CenterVertically) {
+                            RadioButton(
+                                selected = jenisKelamin == strPerempuan,
+                                onClick = { jenisKelamin = strPerempuan }
+                            )
+                            Text(text = strPerempuan)
+                        }
+                    }
                 }
             }
         }
