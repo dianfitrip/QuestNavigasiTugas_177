@@ -133,6 +133,42 @@ fun FormIsian(
                         }
                     }
                     Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.spacer_large)))
+
+                    // BAGIAN STATUS PERKAWINAN
+                    Text(
+                        text = stringResource(id = R.string.label_status),
+                        fontSize = dimensionResource(id = R.dimen.font_size_label).value.sp,
+                        color = colorResource(id = R.color.grey_label)
+                    )
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.SpaceBetween
+                    ) {
+                        // Radiobtn Janda
+                        Row(verticalAlignment = Alignment.CenterVertically) {
+                            RadioButton(
+                                selected = statusPerkawinan == strJanda,
+                                onClick = { statusPerkawinan = strJanda }
+                            )
+                            Text(text = strJanda)
+                        }
+                        // Radiobtn Lajang
+                        Row(verticalAlignment = Alignment.CenterVertically) {
+                            RadioButton(
+                                selected = statusPerkawinan == strLajang,
+                                onClick = { statusPerkawinan = strLajang }
+                            )
+                            Text(text = strLajang)
+                        }
+                        // Radiobtn Duda
+                        Row(verticalAlignment = Alignment.CenterVertically) {
+                            RadioButton(
+                                selected = statusPerkawinan == strDuda,
+                                onClick = { statusPerkawinan = strDuda }
+                            )
+                            Text(text = strDuda)
+                        }
+                    }
                 }
             }
         }
