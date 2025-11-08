@@ -48,6 +48,27 @@ fun ListPesertaScreen(
                     PesertaCard(peserta = peserta)
                 }
             }
+            // Tombol Navigasi di bawah
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth(0.9f)
+                    .padding(vertical = dimensionResource(id = R.dimen.padding_medium)),
+                horizontalArrangement = Arrangement.SpaceBetween
+            ) {
+                Button(
+                    onClick = onBerandaClick,
+                    modifier = Modifier.weight(1f)
+                ) {
+                    Text(text = stringResource(id = R.string.btn_beranda))
+                }
+                Spacer(modifier = Modifier.width(dimensionResource(id = R.dimen.spacer_medium)))
+                Button(
+                    onClick = onFormulirClick,
+                    modifier = Modifier.weight(1f)
+                ) {
+                    Text(text = stringResource(id = R.string.btn_formulir))
+                }
+            }
         }
     }
 }
