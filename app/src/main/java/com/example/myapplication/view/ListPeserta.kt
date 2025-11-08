@@ -37,7 +37,17 @@ fun ListPesertaScreen(
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.SpaceBetween
         ){
-
+            LazyColumn(
+                modifier = Modifier
+                    .weight(1f)
+                    .fillMaxWidth(0.9f)
+                    .padding(vertical = dimensionResource(id = R.dimen.padding_small)),
+                verticalArrangement = Arrangement.spacedBy(dimensionResource(id = R.dimen.spacer_medium))
+            ) {
+                items(listPesertaStatis) { peserta ->
+                    PesertaCard(peserta = peserta)
+                }
+            }
         }
     }
 }
