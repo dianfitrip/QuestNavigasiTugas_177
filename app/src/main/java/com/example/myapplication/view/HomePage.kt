@@ -41,6 +41,19 @@ fun HalamanHome(
                 )
 
                 Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.spacer_xlarge)))
+
+                Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                    Text(
+                        text = "Dian Fitri Pradini",
+                        fontSize = dimensionResource(id = R.dimen.font_size_body).value.sp,
+                        color = colorResource(id = R.color.red)
+                    )
+                    Text(
+                        text = "20230140177",
+                        fontSize = dimensionResource(id = R.dimen.font_size_body).value.sp,
+                        color = colorResource(id = R.color.red)
+                    )
+                }
             }
         }
     }
