@@ -210,4 +210,41 @@ fun FormIsian(
             }
         }
     }
+
+    // pop up Dialog
+    if (showDialog) {
+        AlertDialog(
+            onDismissRequest = {
+                showDialog = false
+                onBackClick() // Kembali saat dialog ditutup
+            },
+            title = {
+                Text(
+                    text = stringResource(id = R.string.dialog_title),
+                    fontWeight = FontWeight.Bold
+                )
+            },
+            text = {
+                Column {
+                    // Data ditulis langsung
+                    Text(text = "${stringResource(id = R.string.dialog_label_nama)}: $nama")
+                    Text(text = "${stringResource(id = R.string.dialog_label_jk)}: $jenisKelamin")
+                    Text(text = "${stringResource(id = R.string.dialog_label_status)}: $statusPerkawinan")
+                    Text(text = "${stringResource(id = R.string.dialog_label_alamat)}: $alamat")
+                }
+            },
+            confirmButton = {
+                TextButton(onClick = {
+                    showDialog = false
+                    onBackClick() // Kembali saat klik OK
+                }) {
+                    Text(stringResource(id = R.string.dialog_btn_ok))
+                }
+            }
+        )
+    }
 }
+
+
+
+
