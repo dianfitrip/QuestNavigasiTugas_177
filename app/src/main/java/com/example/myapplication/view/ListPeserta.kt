@@ -29,5 +29,15 @@ fun ListPesertaScreen(
                 )
             )
         }
-    ){}
+    ){isiRuang ->
+        Column(
+            modifier = Modifier
+                .padding(isiRuang)
+                .fillMaxSize(),
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.SpaceBetween
+        ){
+
+        }
+    }
 }
