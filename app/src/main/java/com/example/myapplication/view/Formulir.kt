@@ -55,4 +55,22 @@ fun FormIsian(
     val strJanda = stringResource(id = R.string.status_janda)
     val strLajang = stringResource(id = R.string.status_lajang)
     val strDuda = stringResource(id = R.string.status_duda)
+
+    Scaffold(
+        modifier = Modifier,
+        topBar = {
+            TopAppBar(
+                title = {
+                    Text(
+                        text = stringResource(id = R.string.form_title),
+                        color = Color.Black,
+                        fontWeight = FontWeight.SemiBold
+                    )
+                },
+                colors = TopAppBarDefaults.mediumTopAppBarColors(
+                    containerColor = Color.Transparent
+                )
+            )
+        }
+    ){isiRuang ->}
 }
