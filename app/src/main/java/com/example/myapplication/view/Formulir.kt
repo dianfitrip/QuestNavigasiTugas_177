@@ -88,7 +88,24 @@ fun FormIsian(
                     defaultElevation = dimensionResource(id = R.dimen.card_elevation)
                 )
             ){
-
+                Column(
+                    modifier = Modifier.padding(dimensionResource(id = R.dimen.padding_large)),
+                    horizontalAlignment = Alignment.Start
+                ){
+                    // INPUT NAMA LENGKAP
+                    Text(
+                        text = stringResource(id = R.string.label_nama_lengkap),
+                        fontSize = dimensionResource(id = R.dimen.font_size_label).value.sp,
+                        color = colorResource(id = R.color.grey_label)
+                    )
+                    OutlinedTextField(
+                        value = nama,
+                        onValueChange = { nama = it },
+                        label = { Text(text = stringResource(id = R.string.placeholder_nama)) },
+                        modifier = Modifier.fillMaxWidth(),
+                        singleLine = true
+                    )
+                }
             }
         }
     }
