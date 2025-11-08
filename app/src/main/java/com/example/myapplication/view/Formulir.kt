@@ -105,6 +105,7 @@ fun FormIsian(
                         modifier = Modifier.fillMaxWidth(),
                         singleLine = true
                     )
+                    Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.spacer_large)))
                 }
             }
         }
